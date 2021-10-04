@@ -18,11 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Repositories\" />
-    <Folder Include="Abstract\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\EL\EL.csproj" />
   </ItemGroup>
 
