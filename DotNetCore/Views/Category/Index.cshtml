@@ -1,0 +1,22 @@
+﻿@using EL.Concrete
+@model List<Category>
+
+<table class="table table-bordered">
+    <tr>
+        <td>CategoryID</td>
+        <td>Category Ad</td>
+        <td>Category Durumu</td>
+        <td>Category Detay</td>
+        <td>Sil</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+            <td>@item.CategoryStatus</td>
+            <td>@item.CategoryDescription</td>
+            <td><a href="#" class="btn btn-danger"></a>Sil</td>
+        </tr>
+    }
+</table>
