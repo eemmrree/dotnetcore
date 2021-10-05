@@ -11,11 +11,11 @@ namespace EL.Concrete
     {
         [Key]
         public int WriterID { get; set; }
-        public int WriterName { get; set; }
-        public int WriterAbout { get; set; }
-        public int WriterImage { get; set; }
-        public int WriterMail { get; set; }
-        public int WriterPassword { get; set; }
-        public int WriterStatus { get; set; }
+        public string WriterName { get; set; }
+        public string WriterAbout { get; set; }
+        public string WriterImage { get; set; }
+        public string WriterMail { get; set; }
+        public string WriterPassword { get; set; }
+        public bool WriterStatus { get; set; }
     }
 }
