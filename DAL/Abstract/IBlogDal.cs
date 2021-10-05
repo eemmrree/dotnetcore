@@ -9,5 +9,6 @@ namespace DAL.Abstract
 {
     public interface IBlogDal:IGenericDal<Blog>
     {
+        List<Blog> getListWithCategory();
     }
 }
