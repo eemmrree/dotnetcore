@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using DAL.Abstract;
@@ -19,6 +20,11 @@ namespace DAL.Concrete.Repositories
         public T GetById(int id)
         {
             return c.Set<T>().Find(id);
+        }
+
+        public List<T> GetListAll(Expression<Func<T, bool>> filter)
+        {
+            return c.Set<T>().Where(filter).ToList();
         }
 
         public List<T> GetListAll()
