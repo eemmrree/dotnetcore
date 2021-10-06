@@ -11,11 +11,11 @@ namespace EL.Concrete
     {
         [Key]
         public int AboutID { get; set; }
-        public int AboutDetail1 { get; set; }
-        public int AboutDetail2 { get; set; }
-        public int AboutImage1 { get; set; }
-        public int AboutImage2 { get; set; }
-        public int AboutMapLocation { get; set; }
+        public string AboutDetail1 { get; set; }
+        public string AboutDetail2 { get; set; }
+        public string AboutImage1 { get; set; }
+        public string AboutImage2 { get; set; }
+        public string AboutMapLocation { get; set; }
         public bool AboutStatus { get; set; }
     }
 }
