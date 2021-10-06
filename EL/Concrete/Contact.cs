@@ -16,7 +16,9 @@ namespace EL.Concrete
         public string ContactTitle { get; set; }
         public string ContactSubject { get; set; }
         public string ContactMessage { get; set; }
-        public DateTime ContactDate { get; set; }
-        public DateTime ContactStatus { get; set; }
+
+        public bool ContactStatus2 { get; set; }
+        public DateTime ContactDate2 { get; set; }
+       
     }
 }
