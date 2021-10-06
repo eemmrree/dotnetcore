@@ -15,3 +15,6 @@ Video 32: Eğer Blogta Hiç Yorum yoksa ilk yorumu siz yazın diye yazdırılaca
 Video 33-34: Parolanın 2 kez girilip onaylanması ve Kayıt olma sayfasında değerlerini view modelde tutucağımız bir şehir seçimi.. --> Yapıldı ( commits'lerde Belirtildi )
 
 Video 35: Fluent Validationda Kullanıcının parolası en az bir büyük harf, en az bir küçük harf ve en az 1 sayı olacak. --> Yapıldı ( commits'lerde Belirtildi )
+
+Video 39: Yorum ve Mail bülteni ekleme sorunun giderilmesi --> Giderildi ( commits'lerde Belirtildi )
+
