@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace DotNetCore.Controllers
 {
-    public class LoginController : Controller
+    public class WriterController : Controller
     {
-        [AllowAnonymous]
+        [Authorize]
         public IActionResult Index()
         {
             return View();
