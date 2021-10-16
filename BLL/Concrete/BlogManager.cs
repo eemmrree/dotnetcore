@@ -37,6 +37,11 @@ namespace BLL.Concrete
             return _blogDal.GetListAll();
         }
 
+        public List<Blog> GetLast3Blogs()
+        {
+            return _blogDal.GetListAll().Take(3).ToList();
+        }
+
         public List<Blog> GetBlogById(int id)
         {
             return _blogDal.GetListAll(x => x.BlogID == id);
