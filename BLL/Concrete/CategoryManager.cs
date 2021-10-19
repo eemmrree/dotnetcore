@@ -17,21 +17,6 @@ namespace BLL.Concrete
         {
             _categoryDal = categoryDal;
         }
-        public void CategoryAdd(Category category)
-        {
-           _categoryDal.Insert(category);
-        }
-
-        public void CategoryDelete(Category category)
-        {
-            _categoryDal.Delete(category);
-        }
-
-        public void CategoryUpdate(Category category)
-        {
-            _categoryDal.Update(category);
-        }
-
         public List<Category> GetList()
         {
             return _categoryDal.GetListAll();
@@ -40,6 +25,21 @@ namespace BLL.Concrete
         public Category GetById(int id)
         {
            return _categoryDal.GetById(id);
+        }
+
+        public void Add(Category t)
+        {
+            _categoryDal.Insert(t);
+        }
+
+        public void Delete(Category t)
+        {
+            _categoryDal.Delete(t);
+        }
+
+        public void Update(Category t)
+        {
+            _categoryDal.Update(t);
         }
     }
 }
