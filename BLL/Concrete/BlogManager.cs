@@ -17,21 +17,7 @@ namespace BLL.Concrete
         {
             _blogDal = blogDal;
         }
-        public void BlogAdd(Blog blog)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void BlogDelete(Blog blog)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void BlogUpdate(Blog blog)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public List<Blog> GetList()
         {
             return _blogDal.GetListAll();
@@ -49,7 +35,8 @@ namespace BLL.Concrete
 
         public Blog GetById(int id)
         {
-            throw new NotImplementedException();
+            return null;
+            //return _blogDal.GetListAll(x => x.BlogID == id);
         }
 
         public List<Blog> GetBlogList()
@@ -60,6 +47,21 @@ namespace BLL.Concrete
         public List<Blog> GetBlogListByWriter(int id)
         {
             return _blogDal.GetListAll(x => x.WriterID == id);
+        }
+
+        public void Add(Blog t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(Blog t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Blog t)
+        {
+            throw new NotImplementedException();
         }
     }
 }
