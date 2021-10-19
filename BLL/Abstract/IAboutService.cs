@@ -7,8 +7,7 @@ using EL.Concrete;
 
 namespace BLL.Abstract
 {
-    public interface IAboutService
+    public interface IAboutService:IGenericService<About>
     {
-        List<About> GetList();
     }
 }
