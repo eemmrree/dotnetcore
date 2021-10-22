@@ -23,5 +23,11 @@ namespace DotNetCore.Controllers
             var values = bm.GetBlogById(id);
             return View(values);
         }
+
+        public IActionResult BlogListByWriter()
+        {
+            var values=bm.GetBlogListByWriter(3);
+            return View(values);
+        }
     }
 }
