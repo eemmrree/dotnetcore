@@ -11,7 +11,7 @@ namespace BLL.Concrete
 {
     public class BlogManager : IBlogService
     {
-        private IBlogDal _blogDal;
+        private readonly IBlogDal _blogDal;
 
         public BlogManager(IBlogDal blogDal)
         {
@@ -23,6 +23,10 @@ namespace BLL.Concrete
             return _blogDal.GetListAll();
         }
 
+        public List<Blog> GetWithCategoryByWriter(int id)
+        {
+            return _blogDal.GetListWithCategoryByWriter(id);
+        }
         public List<Blog> GetLast3Blogs()
         {
             return _blogDal.GetListAll().Take(3).ToList();
@@ -35,13 +39,12 @@ namespace BLL.Concrete
 
         public Blog GetById(int id)
         {
-            return null;
-            //return _blogDal.GetListAll(x => x.BlogID == id);
+            return _blogDal.GetById(id);
         }
 
         public List<Blog> GetBlogList()
         {
-            return _blogDal.getListWithCategory();
+            return _blogDal.GetListWithCategory();
         }
 
         public List<Blog> GetBlogListByWriter(int id)
@@ -51,17 +54,17 @@ namespace BLL.Concrete
 
         public void Add(Blog t)
         {
-            throw new NotImplementedException();
+            _blogDal.Insert(t);
         }
 
         public void Delete(Blog t)
         {
-            throw new NotImplementedException();
+            _blogDal.Delete(t);
         }
 
         public void Update(Blog t)
         {
-            throw new NotImplementedException();
+            _blogDal.Update(t);
         }
     }
 }
